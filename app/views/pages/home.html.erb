@@ -165,8 +165,15 @@
 <div class="container space-top-md-0 space-top-lg-0">
   <div class="text-center mx-lg-auto">
 
-    <div class="mx-lg-auto">
+    <!-- <div class="mx-lg-auto">
       <img class="img-fluid" src="/img/beforeafter.png" alt="Image Description">
+    </div> -->
+
+    <div id="slider" class="beer-slider mx-lg-auto" data-beer-label="before">
+      <img class="img-fluid" src="/img/beforeafter.png" alt="Image Description">
+      <div class="beer-reveal" data-beer-label="after">
+        <img class="img-fluid" src="/img/beforeafter.png" alt="Image Description">
+      </div>
     </div>
   </div>
 </div>
@@ -202,8 +209,8 @@
                 <li class="text-dark">That tricky conversation that got you all back on track</li>
                 <li class="text-dark">That weird day you all discovered a mutual love of 90s pop</li>
               </ul>
-            </div>   
-  
+            </div>
+
             </div>
           </div>
           <!-- End Icon Blocks -->
@@ -223,10 +230,10 @@
                 <li class="text-dark">That new way of working that changed the game</li>
               </ul>
 
-            </div>   
-          
+            </div>
+
           </div>
-        </div>       
+        </div>
 
           <!-- End Icon Blocks -->
         </div>
@@ -245,10 +252,10 @@
                 <li class="text-dark">That important new starter you all wanted to impress</li>
               </ul>
 
-            </div>   
-          
+            </div>
+
           </div>
-        </div>  
+        </div>
           <!-- End Icon Blocks -->
       </div>
 
@@ -481,6 +488,10 @@
   <script src="/js/hs.core.js"></script>
   <script src="/js/hs.slick-carousel.js"></script>
   <script src="/js/hs.validation.js"></script>
+  <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+  <script>
+    new BeerSlider(document.getElementById('slider'));
+  </script>
 
   <!-- JS Plugins Init. -->
   <script>
